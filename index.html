@@ -2,87 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weworkbook Certificate</title>
+  <title>Verification Results - Certificate</title>
   <style>
     body {
-      background-color: #111;
-      color: #fff;
+      background-color: #1a1a1a;
       font-family: Arial, sans-serif;
+      color: #ffffff;
       margin: 0;
       padding: 0;
     }
+
+    .top-bar {
+      background-color: #000;
+      color: #ffffff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .top-bar img {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+    }
+
     .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background-color: #2c2c2c;
       padding: 30px;
-      max-width: 600px;
-      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
     }
-    h1 {
-      font-size: 3em;
-      color: white;
-    }
+
     h2 {
-      color: #f08080;
-      margin-top: 40px;
-    }
-    p {
-      font-size: 1.1em;
-      line-height: 1.6;
-    }
-    a {
-      color: #f08080;
-      text-decoration: underline;
-    }
-    .login {
-      margin-top: 50px;
-      padding: 20px;
-      border-top: 1px solid #333;
-    }
-    .login input {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 15px;
-      background-color: transparent;
-      border: 2px solid #f08080;
-      color: white;
-      font-size: 1em;
-    }
-    .login button {
-      width: 100%;
-      padding: 12px;
-      background-color: #f08080;
-      border: none;
-      font-size: 1em;
-      color: #111;
-      cursor: pointer;
-    }
-    .footer-note {
       text-align: center;
-      font-size: 0.9em;
+      color: #00bfff;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .valid-msg {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+
+    .info {
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    .info span {
+      font-weight: bold;
+      color: #ccc;
+    }
+
+    .tick {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .tick img {
+      width: 70px;
+      height: 70px;
+    }
+
+    .download-btn {
+      display: block;
+      width: 100%;
+      background-color: #0074cc;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 30px;
+      transition: background 0.3s;
+    }
+
+    .download-btn:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      text-align: center;
       margin-top: 20px;
-      color: #aaa;
+      font-size: 12px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Weworkbook</h1>
-    <h2>Certificate Details</h2>
 
-    <p><strong>Issuing Organisation:</strong> Melbourne Training Centre Pty Ltd</p>
-    <p><strong>Certificate Number:</strong> SWC4106C3IS</p>
-    <p><strong>Student Name:</strong> Brenam Kiprono Chebon</p>
-    <p><strong>Course:</strong> CHC33015 - Certificate III in Individual Support</p>
-  
-    <p>Click <a href="https://drive.google.com/file/d/1s3i1Uirltj7J_bgD3PuyFHZ5EUGakbyY/view?usp=drive_link" target="_blank">here</a> to view the certificate</p>
-
-    <div class="login">
-      <h2>USER LOGIN</h2>
-      <input type="text" placeholder="Username">
-      <input type="password" placeholder="Password">
-      <button>Login</button>
-      <p><a href="#">Forgot Password</a></p>
-    </div>
+  <div class="top-bar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Check_icon_blue_circle.svg/1024px-Check_icon_blue_circle.svg.png" alt="Checkmark">
+    DOCUMENT AUTHENTICITY VERIFICATION
   </div>
+
+  <div class="container">
+    <h2>VERIFICATION RESULTS</h2>
+    <div class="tick">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Yes_Check_Circle.svg/1024px-Yes_Check_Circle.svg.png" alt="Verified">
+    </div>
+    <div class="valid-msg">This is a valid certificate.</div>
+    <div class="info">
+      <p><span>Number:</span> 229207</p>
+      <p><span>Issued by:</span> Sharon McCulloch</p>
+      <p><span>Issued to:</span> Brenam Kiprono Chebon</p>
+      <p><span>Issue date:</span> 22 August 2023</p>
+      <p><span>Expires:</span> 21 August 2026</p>
+      <p><span>For:</span> HLTAID011 - Provide First Aid & CPR (5hrs) Face-to-Face Training & Assessment (NO ONLINE)</p>
+    </div>
+    <a class="download-btn" href="https://drive.google.com/file/d/1OA3szRq2x5ELj00qlIgU8B9XV0nJK4t2/view?usp=sharing" target="_blank">Download Full Certificate</a>
+    <footer>
+      © Copyright 2025 Vasto Software Pty Ltd. All rights reserved.
+    </footer>
+  </div>
+
 </body>
 </html>
